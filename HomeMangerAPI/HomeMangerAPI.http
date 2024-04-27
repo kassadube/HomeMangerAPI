@@ -1,0 +1,12 @@
+@HomeMangerAPI_HostAddress = http://localhost/HomeMangerAPI
+
+GET {{HomeMangerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET https://unity-qa.powerfleet.com/fleetcore.api/api/site/languages
+Accept: application/json
+
+
+###
