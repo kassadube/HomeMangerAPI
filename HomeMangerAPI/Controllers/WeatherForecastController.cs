@@ -1,3 +1,4 @@
+using HomeManger.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HomeMangerAPI.Controllers;
@@ -11,10 +12,11 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    private readonly ICategoryRepository _rep;
+    public WeatherForecastController(ICategoryRepository cat, ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
+        _rep = cat;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]

@@ -1,3 +1,4 @@
+using HomeMangerAPI.Services;
 using Microsoft.Extensions.Configuration;
 using Serilog;
 using Serilog.AspNetCore;
@@ -31,6 +32,7 @@ builder.Services.AddLogging(loggingBuilder =>
 );
 
 Log.Error("fffff");
+builder.Services.AddServices();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
