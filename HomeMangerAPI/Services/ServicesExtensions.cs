@@ -10,6 +10,7 @@ public static class ServicesExtensions
     {
        // services.AddSingleton(env);
         services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<CategoryProxy, CategoryProxy>();
         return services;
     }
 }

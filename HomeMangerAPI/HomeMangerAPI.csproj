@@ -6,6 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DB\hm.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DB\hm.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
   
 
   <ItemGroup>
@@ -22,6 +32,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HomeManger.Data\HomeManger.Data.csproj" />
+    <ProjectReference Include="..\HomeManger.Model\HomeManger.Model.csproj" />
   </ItemGroup>
 
 </Project>

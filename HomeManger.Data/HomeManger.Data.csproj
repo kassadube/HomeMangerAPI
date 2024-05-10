@@ -14,6 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HomeManger.Model\HomeManger.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Toolkit">
       <HintPath>..\dependencies\Toolkit.dll</HintPath>
     </Reference>
